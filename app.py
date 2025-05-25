@@ -13,6 +13,7 @@ df["mois"] = df["transaction_date"].dt.to_period("M").astype(str)
 
 # --- App Dash ---
 app = Dash(__name__)
+server=app.server
 app.title = "Dashboard Ventes Cafétéria"
 
 # --- Layout ---
